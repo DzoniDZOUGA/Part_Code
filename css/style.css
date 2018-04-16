@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+  background-color: dimgrey;  
+    
+}
+header>nav{
+    
+    padding: 12px;
+    text-align: center;
+    font-family: Raleway;
+    box-shadow: 2px 4px 8px rgba(183, 24, 24, 1.84);
+}
+#nav-3 {
+    padding: 12px;
+    text-align: center;
+    font-family: Raleway;
+    box-shadow: 2px 2px 8px rgba(183, 24, 24, 0.84);
+    background: #EEA200;
+    border-top-right-radius: 50px 50px;
+    border-top-left-radius: 50px 50px ;
+    border-bottom-left-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+}
+.link-3 {
+  transition: 0.5s;
+  color: firebrick;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+    -webkit-animation: mymovehover 5s infinite; /*ovo je za  Safari 4.0 - 8*/
+    animation: mymovehover 3s infinite;
+    border-bottom-style: dashed;
+    border-top-style: ridge;
+    background-color: orangered;
+    color: #EEA200;
+    padding: 24px 10px;
+    
+}
+.link-3.active{
+  -webkit-animation: mymoveactive 5s infinite; /*ovo je za  Safari 4.0*/
+  animation: mymoveactive 5s infinite;
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+  
+}
+#slider{
+    height: 460px;
+    font-family: Raleway;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.myslide{
+    height: 550px;
+    width: 100%;
+}
+@-webkit-keyframes mymovehover { /* ZA SAFARI !!!*/
+    25% {border-bottom-right-radius: 55px;}
+    25% {border-top-left-radius: 55px;}
+    5%  {border-bottom-left-radius: 55px;}
+    5%  {border-top-right-radius: 55px;}
+}
+
+@keyframes mymovehover {
+    55%  {border-bottom-right-radius: 55px;}
+    15%  {border-top-left-radius: 55px;}
+    25%  {border-bottom-left-radius: 50px;}
+    5%  {border-top-right-radius: 50px;}
+}
+
+@-webkit-keyframes mymoveactive{
+     0% {
+        border-bottom-right-radius: 55px;
+        background-color: red;
+        color: gold;
+        
+    }
+    25% {
+        border-top-left-radius: 55px;
+        background-color: yellow;
+        color: black;
+        
+    }
+    50%  {
+        border-bottom-left-radius: 55px;
+        background-color: green;
+        color: wheat;
+    
+    }
+    75%  {
+        border-top-right-radius: 55px;
+    }
+}
+@keyframes mymoveactive{
+    0% {
+        border-bottom-right-radius: 55px;
+        background-color: red;
+        color: gold;
+        
+        
+    }
+    25% {
+        border-top-left-radius: 55px;
+        background-color: yellow;
+        color: black;
+        
+        
+    }
+    50%  {
+        border-bottom-left-radius: 55px;
+        background-color: green;
+        color: wheat;
+        
+    
+    }
+    75%  {
+        border-top-right-radius: 55px;
+        background-color: darkgoldenrod;
+        color: snow;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
